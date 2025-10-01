@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Planner & Debt Consulting Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Financial Planner Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">แดชบอร์ด</a></li>
+                <li><a href="#consultation">ปรึกษา</a></li>
+                <li><a href="#loans">สินเชื่อ</a></li>
+                <li><a href="#planning">วางแผนการเงิน</a></li>
+            </ul>
+            <div class="user-menu">
+                <button class="login-btn">เข้าสู่ระบบ</button>
+                <button class="register-btn">สมัครสมาชิก</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>แก้ปัญหาหนี้สิน วางแผนการเงินอย่างมืออาชีพ</h1>
+            <p>ให้คำปรึกษาและวางแผนการเงินสำหรับผู้ที่ต้องการจัดการหนี้สิน</p>
+            <button class="cta-button">เริ่มต้นใช้งาน</button>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard">
+            <h2>แดชบอร์ดส่วนตัว</h2>
+            <div class="dashboard-grid">
+                <!-- Financial Summary -->
+                <div class="financial-summary">
+                    <h3>สรุปสถานะการเงิน</h3>
+                    <div class="summary-cards">
+                        <div class="card total-debt">
+                            <h4>หนี้สินรวม</h4>
+                            <p class="amount">฿0.00</p>
+                        </div>
+                        <div class="card monthly-payment">
+                            <h4>ค่างวดต่อเดือน</h4>
+                            <p class="amount">฿0.00</p>
+                        </div>
+                        <div class="card credit-score">
+                            <h4>คะแนนเครดิต</h4>
+                            <p class="score">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Tracking -->
+                <div class="progress-tracking">
+                    <h3>ความคืบหน้า</h3>
+                    <div class="progress-chart">
+                        <!-- Progress chart will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consultation Section -->
+        <section id="consultation" class="consultation">
+            <h2>ปรึกษาผู้เชี่ยวชาญ</h2>
+            <div class="consultation-options">
+                <!-- Video Consultation -->
+                <div class="consultation-card">
+                    <h3>ปรึกษาผ่านวิดีโอ</h3>
+                    <p>พูดคุยกับที่ปรึกษาแบบตัวต่อตัว</p>
+                    <button class="book-consultation">จองคิวปรึกษา</button>
+                </div>
+                <!-- Chat Consultation -->
+                <div class="consultation-card">
+                    <h3>แชทกับที่ปรึกษา</h3>
+                    <p>ส่งข้อความปรึกษาได้ทันที</p>
+                    <button class="start-chat">เริ่มแชท</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loan Application Section -->
+        <section id="loans" class="loan-application">
+            <h2>สินเชื่อระยะสั้น</h2>
+            <form class="loan-form">
+                <div class="form-group">
+                    <label for="loan-amount">วงเงินที่ต้องการ</label>
+                    <input type="number" id="loan-amount" name="loan-amount">
+                </div>
+                <div class="form-group">
+                    <label for="loan-purpose">วัตถุประสงค์การกู้</label>
+                    <select id="loan-purpose" name="loan-purpose">
+                        <option value="">เลือกวัตถุประสงค์</option>
+                        <option value="debt-consolidation">รวมหนี้</option>
+                        <option value="emergency">เงินด่วน</option>
+                        <option value="business">ธุรกิจ</option>
+                    </select>
+                </div>
+                <button type="submit" class="apply-loan">สมัครสินเชื่อ</button>
+            </form>
+        </section>
+
+        <!-- Financial Planning Section -->
+        <section id="planning" class="financial-planning">
+            <h2>วางแผนการเงิน</h2>
+            <div class="planning-tools">
+                <!-- Budget Planner -->
+                <div class="tool-card">
+                    <h3>วางแผนงบประมาณ</h3>
+                    <div class="budget-form">
+                        <!-- Budget planning form will be here -->
+                    </div>
+                </div>
+                <!-- Debt Management -->
+                <div class="tool-card">
+                    <h3>จัดการหนี้</h3>
+                    <div class="debt-calculator">
+                        <!-- Debt calculator will be here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>เกี่ยวกับเรา</h4>
+                <ul>
+                    <li><a href="#">เกี่ยวกับบริษัท</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                    <li><a href="#">ร่วมงานกับเรา</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>บริการของเรา</h4>
+                <ul>
+                    <li><a href="#">ที่ปรึกษาการเงิน</a></li>
+                    <li><a href="#">สินเชื่อ</a></li>
+                    <li><a href="#">วางแผนการเงิน</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>ช่วยเหลือ</h4>
+                <ul>
+                    <li><a href="#">คำถามที่พบบ่อย</a></li>
+                    <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                    <li><a href="#">เงื่อนไขการใช้บริการ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Financial Planner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Windows -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>เข้าสู่ระบบ</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">อีเมล</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">รหัสผ่าน</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">เข้าสู่ระบบ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h2>สมัครสมาชิก</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="fullname">ชื่อ-นามสกุล</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">อีเมล</label>
+                    <input type="email" id="reg-email" name="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">รหัสผ่าน</label>
+                    <input type="password" id="reg-password" name="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">สมัครสมาชิก</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
